@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+<!-- 	<h1 v-cloak v-text="message"> </h1>
+	<h1 v-if="viewed 	== false " v-html="intro"></h1>
+	<p v-else> You dont look it</p> -->
+
+	<h1 v-bind:title="title"> {{ message }}</h1>
+	<img :src="url" v-bind:alt="title" :title="title" />
+	<div>
+		<ul>
+			<li style="list-style-type: none;" v-for="todo in todos" > <b> {{todo.id }}</b> {{todo.todo}} </li>
+			
+		</ul>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.1/vue.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+</body>
+</html>
